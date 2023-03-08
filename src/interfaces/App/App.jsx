@@ -13,7 +13,6 @@ function App() {
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/test" element={<p>dsckjn</p>} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>
