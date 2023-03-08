@@ -1,3 +1,11 @@
+## About The Project
+
+[![multi-page-app][product-screenshot]]()
+
+### Built With
+
+- React
+
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -9,7 +17,7 @@ To run the project follow these simple steps.
 1. Clone the repo
 
 ```sh
-git clone https://github.com/Nicolas-dlb/Starter-react
+git clone https://github.com/Nicolas-dlb/multi-page-app
 ```
 
 2. install dependances
@@ -24,21 +32,13 @@ npm install
 npm start
 ```
 
-### Tests
-
-run unit tests
-
-```sh
-npm test
-```
-
 <!-- CONTACT -->
 
 ## Contact
 
 Nicolas Dubois - [@Linkedin](https://www.linkedin.com/in/nicolasdlb) - nicolas_db@outlook.fr
 
-Project Link: [https://github.com/Nicolas-dlb/Starter-react](https://github.com/Nicolas-dlb/Starter-react)
+Project Link: [https://github.com/Nicolas-dlb/multi-page-app](https://github.com/Nicolas-dlb/multi-page-app)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -55,4 +55,4 @@ Project Link: [https://github.com/Nicolas-dlb/Starter-react](https://github.com/
 [license-url]: https://github.com/Nicolas-dlb/Coinlabs/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/nicolasdlb
-[product-screenshot]: ./src/assets/pictures/product-screenshot.png
+[product-screenshot]: ./src/assets/product-screenshot.png
