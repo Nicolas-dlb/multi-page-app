@@ -1,0 +1,77 @@
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	height: 700px;
+	padding-top: 50px;
+	background-color: var(--peach);
+	box-sizing: border-box;
+	background-image: url(../../../assets/home/bg-pattern-hero-home.svg);
+	background-repeat: no-repeat;
+	background-position: left 90%;
+	overflow: hidden;
+	color: var(--white);
+
+	.banner-info {
+		width: 88%;
+		max-width: 450px;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.banner-info-phone {
+		position: relative;
+		bottom: 130px;
+	}
+
+	.banner-info-title {
+		margin-bottom: 20px;
+	}
+
+	.btn-banner-info {
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.banner {
+		border-radius: 15px;
+		background-position: 120% 40%;
+
+		.banner-info {
+			max-width: 600px;
+
+			.banner-info-content {
+				max-width: 420px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.banner {
+		flex-direction: row;
+		text-align: start;
+		justify-content: space-evenly;
+		border-radius: 15px;
+		background-position: right top;
+
+		.banner-info {
+			align-items: flex-start;
+			justify-content: center;
+			margin-left: 50px;
+
+			.btn-banner-info {
+				margin-top: 25px;
+			}
+		}
+		.banner-info-phone {
+			bottom: -120px;
+		}
+	}
+}

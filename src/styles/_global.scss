@@ -1,0 +1,17 @@
+.btn {
+	background-color: var(--white);
+	color: var(--dark-grey);
+	border-radius: 5px;
+	padding: 10px 15px;
+	width: fit-content;
+	font-family: inherit;
+	font-size: 15px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border: none;
+
+	&:hover {
+		background-color: var(--light-peach);
+		color: var(--white);
+	}
+}

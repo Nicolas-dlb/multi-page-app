@@ -1,34 +1,23 @@
-import React, { useState } from "react";
-import "./App.css";
-import Form from "../../components/form/Form";
-import Header from "../../components/header/Header";
-import BadRequestModal from "../../components/badRequestModal/BadRequestModal";
-import useHooks from "../../utils/hooks/useHooks";
-import getData from "../../utils/api/api";
+import React from "react";
+import "./App.scss";
+import Header from "../../components/Header/Header";
+import Home from "../../interfaces/Home/Home";
+import Footer from "components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import NotFound from "interfaces/NotFound/NotFound";
 
 function App() {
-	const [url, setUrl] = useState("");
-	const [badRequest, setBadRequest] = useState(false);
-	const { createItem } = useHooks();
-
 	return (
 		<div className="app">
-			<Header />
-			<Form
-				onChange={setUrl}
-				onClick={() =>
-					getData(url).then((data) =>
-						createItem(data).catch(() => !badRequest && setBadRequest(true))
-					)
-				}
-			/>
-
-			{badRequest && (
-				<BadRequestModal
-					badRequest={badRequest}
-					setBadRequest={setBadRequest}
-				/>
-			)}
+			<div className="layout">
+				<Header />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/test" element={<p>dsckjn</p>} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+			</div>
+			<Footer />
 		</div>
 	);
 }
