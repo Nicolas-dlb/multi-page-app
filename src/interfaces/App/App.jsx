@@ -5,6 +5,7 @@ import Home from "../../interfaces/Home/Home";
 import Footer from "components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "interfaces/NotFound/NotFound";
+import About from "interfaces/About/About";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>
