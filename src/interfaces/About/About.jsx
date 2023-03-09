@@ -1,13 +1,13 @@
 import React from "react";
 import AboutHero from "./AboutHero/AboutHero";
-import "./About.scss";
 import AboutSection from "./AboutSection/AboutSection";
 import { about } from "utils/constants/constants";
 import Countries from "./Countries/Countries";
+import "./About.scss";
 
 function About() {
 	const worldClassTalent = about.worldClassTalent;
-
+	const theRealWorld = about.theRealDeal;
 	return (
 		<section className="about">
 			<AboutHero />
@@ -17,6 +17,11 @@ function About() {
 				secondParagraph={worldClassTalent.secondParagraph}
 			/>
 			<Countries />
+			<AboutSection
+				title={theRealWorld.title}
+				firstParagraph={theRealWorld.firstParagraph}
+				secondParagraph={theRealWorld.secondParagraph}
+			/>
 		</section>
 	);
 }
