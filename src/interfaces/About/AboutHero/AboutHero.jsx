@@ -26,7 +26,7 @@ function AboutHero() {
 			</picture>
 			<div className="about-hero-info-wrapper">
 				<div className="about-hero-info">
-					<h2 className="about-hero-info-title">About us</h2>
+					<h1 className="about-hero-info-title">About us</h1>
 					<p className="about-hero-info-content">
 						Founded in 2010, we are a creative agency that produces lasting
 						results for our clients. We've partnered with many startups,

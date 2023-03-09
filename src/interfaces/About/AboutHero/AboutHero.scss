@@ -64,14 +64,14 @@
 	.about-hero {
 		flex-direction: row-reverse;
 		height: 480px;
-
+		align-content: space-between;
 		.about-hero-info-wrapper {
-			width: 100%;
+			flex: 1;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			background-size: 700px;
-			background-position: right bottom;
+			background-position: center bottom;
 
 			.about-hero-info {
 				padding: 40px 60px;
@@ -88,7 +88,12 @@
 
 		.about-hero-image {
 			height: 100%;
-			width: 80%;
+			width: fit-content;
+
+			img {
+				object-fit: none;
+				display: block;
+			}
 		}
 	}
 }
