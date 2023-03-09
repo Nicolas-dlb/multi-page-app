@@ -1,0 +1,66 @@
+.about-section-image {
+	img {
+		display: block;
+	}
+}
+
+.about-section-info-wrapper {
+	background-color: #fdf3f0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 20px;
+	background-image: url(../../../assets/shared/desktop/bg-pattern-three-circles.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 550px;
+
+	.about-section-info-content {
+		&:first-of-type {
+			margin: 20px 0;
+		}
+	}
+
+	.about-section-info-title {
+		color: var(--peach);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.about-section {
+		border-radius: 15px;
+		overflow: hidden;
+		margin-top: 50px;
+
+		.about-section-info-wrapper {
+			background-position: center;
+		}
+
+		.about-section-info-content {
+			max-width: 600px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.about-section {
+		display: flex;
+		height: 500px;
+
+		.about-section-image {
+			height: 100%;
+		}
+
+		.about-section-info-wrapper {
+			background-position: center -100px;
+			background-size: 600px;
+			flex: 1;
+			text-align: left;
+
+			.about-section-info-content {
+				max-width: 600px;
+			}
+		}
+	}
+}
