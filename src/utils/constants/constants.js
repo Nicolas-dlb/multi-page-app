@@ -1,6 +1,9 @@
 import passionate from "../../assets/home/illustration-passionate.svg"
 import resourceful from "../../assets/home/illustration-resourceful.svg";
 import friendly from "../../assets/home/illustration-friendly.svg";
+import canada from "../../assets/shared/desktop/illustration-canada.svg";
+import australia from "../../assets/shared/desktop/illustration-australia.svg";
+import unitedKingdom from "../../assets/shared/desktop/illustration-united-kingdom.svg";
 import { ReactComponent as facebook } from "../../assets/shared/desktop/icon-facebook.svg"
 import { ReactComponent as youtube } from "../../assets/shared/desktop/icon-youtube.svg";
 import { ReactComponent as twitter } from "../../assets/shared/desktop/icon-twitter.svg";
@@ -42,6 +45,17 @@ export const values = [
 			"We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.",
 	},
 ];
+
+export const countries = [{
+	name: "Canada",
+	illustration: canada
+},{
+	name: "Austalia",
+	illustration: australia
+},{
+	name: "United Kingdom",
+	illustration: unitedKingdom
+}]
 
 export const about = {
 	worldClassTalent: {

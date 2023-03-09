@@ -1,0 +1,27 @@
+.countries {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	margin: 100px 0;
+
+	.country {
+		&:first-of-type .country-illustration::before {
+			transform: rotate(-90deg);
+		}
+		&:nth-child(2) .country-illustration::before {
+			transform: rotate(180deg);
+		}
+		&:last-of-type .country-illustration::before {
+			transform: rotate(90deg);
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.countries {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
