@@ -6,6 +6,7 @@ import Footer from "components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "interfaces/NotFound/NotFound";
 import About from "interfaces/About/About";
+import Locations from "interfaces/Locations/Locations";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/locations" element={<Locations />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>

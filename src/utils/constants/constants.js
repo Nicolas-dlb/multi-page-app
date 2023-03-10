@@ -74,6 +74,33 @@ export const about = {
 	},
 };
 
+export const locations = [
+	{
+		country: "Canada",
+		symbol: "Central",
+		street: "3886 Wellington Street",
+		city: "Toronto, Ontario M9C 3J5",
+		phone: "+1 25-863-8967",
+		mail: "contact@designo.co",
+	},
+	{
+		country: "Australia",
+		symbol: "AU",
+		street: "19 Balonne Street",
+		city: "New South Wales 2443",
+		phone: "(02) 6720 9092",
+		mail: "contact@designo.au",
+	}
+	,
+	{
+		country: "United Kingdom",
+		symbol: "UK",
+		street: "13 Colorado Way",
+		city: "Rhyd-y-fro SA8 9GA",
+		phone: "078 3115 1400",
+		mail: "contact@designo.uk",
+	},
+];
 export const socialMedia = [
 	{
 		name: "Facebook",

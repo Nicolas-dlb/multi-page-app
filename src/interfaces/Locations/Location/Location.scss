@@ -1,0 +1,71 @@
+.location {
+	width: 100%;
+
+	.location-info {
+		background-color: #fdf3f0;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 80px 20px;
+		color: var(--dark-grey);
+		background-image: url(../../../assets/shared/desktop/bg-pattern-three-circles.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 600px;
+
+		.location-info-name {
+			color: var(--peach);
+			margin-bottom: 20px;
+			position: relative;
+			right: 3px;
+		}
+	}
+
+	.location-map img {
+		display: block;
+		object-fit: cover;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.location .location-info {
+		margin-top: 30px;
+		background-position: bottom;
+		border-radius: 15px;
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: space-evenly;
+		.location-info-element {
+			text-align: left;
+		}
+	}
+	.location-map img {
+		border-radius: 15px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.location {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		gap: 30px;
+
+		&:nth-child(2n) {
+			flex-direction: row;
+		}
+
+		.location-info {
+			width: 100%;
+			margin-top: 0;
+		}
+
+		.location-map {
+			width: 45%;
+
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+}
