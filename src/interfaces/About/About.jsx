@@ -2,7 +2,7 @@ import React from "react";
 import AboutHero from "./AboutHero/AboutHero";
 import AboutSection from "./AboutSection/AboutSection";
 import { about } from "utils/constants/constants";
-import Countries from "./Countries/Countries";
+import Countries from "../../components/Countries/Countries";
 import "./About.scss";
 
 function About() {

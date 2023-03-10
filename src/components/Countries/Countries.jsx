@@ -3,7 +3,7 @@ import { countries } from "utils/constants/constants";
 import "./Countries.scss";
 import Country from "./Country/Country";
 
-function Cities() {
+function Countries() {
 	return (
 		<section className="countries">
 			{countries.map((country) => (
@@ -17,4 +17,4 @@ function Cities() {
 	);
 }
 
-export default Cities;
+export default Countries;
