@@ -6,7 +6,7 @@ function Country({ name, img }) {
 	return (
 		<div className="country">
 			<div className="country-illustration">
-				<img src={img} alt="" />
+				<img src={img} alt="" width="202" height="202" />
 			</div>
 			<h3 className="country-name">{name}</h3>
 			<Link
