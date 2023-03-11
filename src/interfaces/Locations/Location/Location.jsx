@@ -14,25 +14,26 @@ function Location({ country, symbol, street, city, phone, mail }) {
 				<img
 					src={`/assets/locations/desktop/image-map-${formattedName}.png`}
 					alt=""
-					loading="lazy"
 					width="100%"
 					height="100%"
 				/>
 			</picture>
 			<div className="location-info">
-				<div className="location-info-element">
-					<h2 className="location-info-name">{country}</h2>
-					<div className="locations-contry-info-address">
-						<p className="bold">Designo {symbol} Office</p>
-						<p>{street}</p>
-						<p>{city}</p>
+				<div className="location-info-element-container">
+					<div className="location-info-element">
+						<h2 className="location-info-name">{country}</h2>
+						<div className="locations-contry-info-address">
+							<p className="bold">Designo {symbol} Office</p>
+							<p>{street}</p>
+							<p>{city}</p>
+						</div>
 					</div>
-				</div>
-				<div className="location-info-element">
-					<div className="locations-contry-info-contact">
-						<p className="bold">Contact</p>
-						<p>P : {phone}</p>
-						<p>M : {mail}</p>
+					<div className="location-info-element">
+						<div className="locations-contry-info-contact">
+							<p className="bold">Contact</p>
+							<p>P : {phone}</p>
+							<p>M : {mail}</p>
+						</div>
 					</div>
 				</div>
 			</div>

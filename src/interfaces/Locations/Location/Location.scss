@@ -3,16 +3,20 @@
 
 	.location-info {
 		background-color: #fdf3f0;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
+
 		padding: 80px 20px;
 		color: var(--dark-grey);
 		background-image: url(../../../assets/shared/desktop/bg-pattern-three-circles.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 600px;
-
+		.location-info-element-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+		}
 		.location-info-name {
 			color: var(--peach);
 			margin-bottom: 20px;
@@ -32,13 +36,22 @@
 		margin-top: 30px;
 		background-position: bottom;
 		border-radius: 15px;
-		flex-direction: row;
-		align-items: flex-end;
-		justify-content: space-evenly;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.location-info-element-container {
+			flex-direction: row;
+			width: 100%;
+			align-items: flex-end;
+			justify-content: space-evenly;
+		}
+
 		.location-info-element {
 			text-align: left;
 		}
 	}
+
 	.location-map img {
 		border-radius: 15px;
 	}
