@@ -15,7 +15,7 @@ function CTA() {
 					our expertise can help your business grow.
 				</p>
 			</div>
-			<Link reloadDocument className="btn btn-cta" to="/contact">
+			<Link className="btn btn-cta" to="/contact">
 				GET IN TOUCH
 			</Link>
 		</div>

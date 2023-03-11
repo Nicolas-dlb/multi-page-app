@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Country.scss";
 
 function Country({ name, img }) {
@@ -8,7 +9,12 @@ function Country({ name, img }) {
 				<img src={img} alt="" />
 			</div>
 			<h3 className="country-name">{name}</h3>
-			<button className="btn">SEE LOCATION</button>
+			<Link
+				to={`/locations#${name.toLowerCase().replace(" ", "-")}`}
+				className="btn"
+			>
+				SEE LOCATION
+			</Link>
 		</div>
 	);
 }

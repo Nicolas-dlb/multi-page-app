@@ -10,7 +10,6 @@ function Category({ name }) {
 			type="button"
 			aria-label="select a project category"
 			className="category"
-			reloadDocument
 			to={`/${formattedName}`}
 		>
 			<picture className="category-background">

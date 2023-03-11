@@ -4,7 +4,7 @@ import "./Location.scss";
 function Location({ country, symbol, street, city, phone, mail }) {
 	const formattedName = country.replace(" ", "-").toLowerCase();
 	return (
-		<div className="location">
+		<div id={formattedName} className="location">
 			<picture className="location-map">
 				<source
 					media="(min-width: 768px) and (max-width: 1280px)"

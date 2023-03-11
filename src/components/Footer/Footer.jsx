@@ -21,12 +21,7 @@ function Footer({ disableCTA }) {
 					<span className="border" />
 					<div className="footer-links">
 						{navLinks.map((link) => (
-							<Link
-								reloadDocument
-								className="footer-link"
-								key={link.name}
-								to={link.path}
-							>
+							<Link className="footer-link" key={link.name} to={link.path}>
 								{link.name.toUpperCase()}
 							</Link>
 						))}

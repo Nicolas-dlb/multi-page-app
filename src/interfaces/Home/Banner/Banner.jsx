@@ -15,7 +15,7 @@ function Banner() {
 					fully responsive websites, app design, and engaging brand experiences.
 					Find out more about our services
 				</p>
-				<Link className="btn-banner-info btn " reloadDocument to="/about">
+				<Link className="btn-banner-info btn " to="/about">
 					LEARN MORE
 				</Link>
 			</div>

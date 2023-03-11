@@ -50,7 +50,7 @@ export const countries = [{
 	name: "Canada",
 	illustration: canada
 },{
-	name: "Austalia",
+	name: "Australia",
 	illustration: australia
 },{
 	name: "United Kingdom",
