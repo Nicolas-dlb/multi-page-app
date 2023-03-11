@@ -22,7 +22,35 @@
 }
 
 @media only screen and (min-width: 1280px) {
-	.app .layout {
-		width: 80%;
+	.app {
+		&.bg-contact {
+			background: url(../../assets/shared/desktop/bg-pattern-leaf.svg) no-repeat
+				bottom 100px right;
+		}
+
+		&.bg-about {
+			background: url(../../assets/shared/desktop/bg-pattern-leaf.svg) no-repeat
+				150% 60%;
+		}
+
+		&.bg-home {
+			position: relative;
+			&::after {
+				content: "";
+				background: url(../../assets/shared/desktop/bg-pattern-leaf.svg)
+					no-repeat 0% 17%;
+				transform: scaleY(-1) scaleX(-1);
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: -1;
+			}
+		}
+
+		.layout {
+			width: 80%;
+		}
 	}
 }

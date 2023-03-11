@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import "./App.scss";
 import Header from "../../components/Header/Header";
 import Home from "../../interfaces/Home/Home";
@@ -26,8 +26,16 @@ function App() {
 		}
 	}, [pathname, hash, key]);
 
+	const bgClass = useMemo(
+		() =>
+			["contact", "about", ""].includes(pathname.substring(1))
+				? `bg-${pathname.substring(1) || "home"}`
+				: undefined,
+		[pathname]
+	);
+
 	return (
-		<div className="app">
+		<div className={`app  ${bgClass}`}>
 			<div className="layout">
 				<Header />
 				<Routes>
@@ -38,7 +46,7 @@ function App() {
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>
-			<Footer />
+			<Footer disableCTA={pathname.includes("contact")} />
 		</div>
 	);
 }
