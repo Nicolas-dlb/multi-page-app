@@ -1,0 +1,145 @@
+.contact {
+	.contact-form {
+		background-image: url(../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-color: var(--peach);
+		color: var(--white);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 60px 40px;
+		gap: 15px;
+
+		.contact-form-header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			gap: 15px;
+			.contact-form-description {
+				max-width: 350px;
+			}
+		}
+
+		.contact-form-inputs {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 10px;
+			.contact-form-input-container {
+				position: relative;
+				display: flex;
+				align-items: center;
+				box-sizing: border-box;
+
+				&:has(> textarea) {
+					&.error::after {
+						top: 40px;
+					}
+				}
+
+				&.error {
+					&::after {
+						content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23FFF'/%3E%3Cpath fill='%23E7816B' d='M11 14v2H9v-2h2zm0-9v7H9V5h2z'/%3E%3C/g%3E%3C/svg%3E");
+						position: absolute;
+						right: 10px;
+						top: 20px;
+					}
+					&::before {
+						content: "Can't be empty ";
+						font-style: italic;
+						color: var(--white);
+						position: absolute;
+						right: 40px;
+					}
+				}
+
+				input,
+				textarea {
+					cursor: pointer;
+					width: 100%;
+					box-sizing: border-box;
+					background: transparent;
+					border: none;
+					padding-bottom: 1px;
+					font-size: 16px;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.626);
+					outline: none;
+					font-family: inherit;
+					color: var(--white);
+
+					&::placeholder {
+						color: var(--white);
+						opacity: 0.6;
+					}
+
+					&:hover {
+						padding-bottom: 0px;
+						border-bottom: 2px solid rgba(255, 255, 255);
+					}
+				}
+
+				input {
+					height: 60px;
+				}
+
+				textarea {
+					height: 100px;
+					resize: none;
+				}
+			}
+		}
+
+		.btn-contact-form {
+			margin-top: 20px;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.contact {
+		.contact-form {
+			border-radius: 15px;
+			background-image: url(../../assets/contact/desktop/bg-pattern-hero-desktop.svg);
+			background-position: -100px -120px;
+
+			align-items: flex-start;
+			text-align: left;
+
+			.contact-form-header {
+				align-items: flex-start;
+				justify-content: center;
+				height: 100%;
+				.contact-form-description {
+					max-width: 550px;
+				}
+			}
+
+			.contact-form-inputs {
+				.btn-contact-form {
+					align-self: flex-end;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.contact {
+		.contact-form {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			background-position: left bottom;
+
+			.contact-form-header {
+				flex: 1;
+			}
+
+			.contact-form-inputs {
+				flex: 0.7;
+			}
+		}
+	}
+}
