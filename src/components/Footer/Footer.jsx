@@ -8,7 +8,7 @@ import logoLight from "../../assets/shared/desktop/logo-light.png";
 function Footer({ disableCTA }) {
 	return (
 		<>
-			<footer className={disableCTA && "disabledCTA"}>
+			<footer className={disableCTA ? "disabledCTA" : undefined}>
 				{!disableCTA && <CTA />}
 				<div className="footer-top">
 					<img
