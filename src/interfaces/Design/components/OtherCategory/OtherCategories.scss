@@ -1,0 +1,17 @@
+.other-categories {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+@media only screen and (min-width: 1280px) {
+	.other-categories {
+		flex-direction: row;
+		.category {
+			height: 300px;
+		}
+	}
+}
