@@ -32,13 +32,17 @@
 		}
 	}
 
-	.about-hero-image {
+	.about-hero-image-wrapper {
 		width: 100%;
-		height: 100%;
 
-		img {
-			display: block;
-			object-fit: cover;
+		.about-hero-image {
+			width: 100%;
+			height: 100%;
+
+			img {
+				display: block;
+				object-fit: cover;
+			}
 		}
 	}
 }
@@ -46,15 +50,18 @@
 @media only screen and (min-width: 768px) {
 	.about-hero {
 		border-radius: 15px;
+
 		.about-hero-info-wrapper {
 			background-position: -80px -350px;
 			background-size: 80%;
 		}
+
 		.about-hero-info {
 			.about-hero-info-content {
 				max-width: 700px;
 			}
 		}
+
 		.about-hero-image {
 			height: 300px;
 		}
@@ -64,7 +71,7 @@
 @media only screen and (min-width: 1280px) {
 	.about-hero {
 		flex-direction: row-reverse;
-		height: 480px;
+		height: 400px;
 		align-content: space-between;
 
 		.about-hero-info-wrapper {
@@ -87,14 +94,17 @@
 				}
 			}
 		}
-
-		.about-hero-image {
+		.about-hero-image-wrapper {
+			width: 396px;
 			height: 100%;
-			width: fit-content;
 
-			img {
-				object-fit: none;
-				display: block;
+			.about-hero-image {
+				height: 100%;
+				width: 100%;
+
+				img {
+					object-fit: cover;
+				}
 			}
 		}
 	}

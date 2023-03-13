@@ -74,10 +74,11 @@
 		}
 
 		.location-map {
-			width: 45%;
+			width: 500px;
 
+			box-sizing: border-box;
 			img {
-				object-fit: cover;
+				object-fit: none;
 			}
 		}
 	}

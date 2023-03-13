@@ -4,26 +4,28 @@ import "./AboutHero.scss";
 function AboutHero() {
 	return (
 		<div className="about-hero">
-			<picture className="about-hero-image">
-				<source
-					media="(max-width: 768px)"
-					srcSet="/assets/about/mobile/image-about-hero.jpg"
-				/>
-				<source
-					media="(max-width: 1280px)"
-					srcSet="/assets/about/tablet/image-about-hero.jpg"
-				/>
-				<source
-					media="(min-width: 1280px)"
-					srcSet="/assets/about/desktop/image-about-hero.jpg"
-				/>
-				<img
-					src="/assets/about/desktop/image-about-us.jpg"
-					alt=""
-					width="100%"
-					height="100%"
-				/>
-			</picture>
+			<div className="about-hero-image-wrapper">
+				<picture className="about-hero-image">
+					<source
+						media="(max-width: 768px)"
+						srcSet="/assets/about/mobile/image-about-hero.jpg"
+					/>
+					<source
+						media="(max-width: 1280px)"
+						srcSet="/assets/about/tablet/image-about-hero.jpg"
+					/>
+					<source
+						media="(min-width: 1280px)"
+						srcSet="/assets/about/desktop/image-about-hero.jpg"
+					/>
+					<img
+						src="/assets/about/desktop/image-about-us.jpg"
+						alt=""
+						width="100%"
+						height="100%"
+					/>
+				</picture>
+			</div>
 			<div className="about-hero-info-wrapper">
 				<div className="about-hero-info">
 					<h1 className="about-hero-info-title">About us</h1>

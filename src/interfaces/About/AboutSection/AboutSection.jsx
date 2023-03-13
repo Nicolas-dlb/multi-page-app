@@ -6,26 +6,28 @@ function AboutSection({ title, firstParagraph, secondParagraph }) {
 
 	return (
 		<div className="about-section">
-			<picture className="about-section-image">
-				<source
-					media="(max-width: 768px)"
-					srcSet={`/assets/about/mobile/image-${formattedTitle}.jpg`}
-				/>
-				<source
-					media="(max-width: 1280px)"
-					srcSet={`/assets/about/tablet/image-${formattedTitle}.jpg`}
-				/>
-				<source
-					media="(min-width: 1280px)"
-					srcSet={`/assets/about/desktop/image-${formattedTitle}.jpg`}
-				/>
-				<img
-					src={`/assets/about/desktop/image-${formattedTitle}.jpg`}
-					alt=""
-					width="100%"
-					height="100%"
-				/>
-			</picture>
+			<div className="about-section-image-wrapper">
+				<picture className="about-section-image">
+					<source
+						media="(max-width: 768px)"
+						srcSet={`/assets/about/mobile/image-${formattedTitle}.jpg`}
+					/>
+					<source
+						media="(max-width: 1280px)"
+						srcSet={`/assets/about/tablet/image-${formattedTitle}.jpg`}
+					/>
+					<source
+						media="(min-width: 1280px)"
+						srcSet={`/assets/about/desktop/image-${formattedTitle}.jpg`}
+					/>
+					<img
+						src={`/assets/about/desktop/image-${formattedTitle}.jpg`}
+						alt=""
+						width="100%"
+						height="100%"
+					/>
+				</picture>
+			</div>
 			<div className="about-section-info-wrapper">
 				<div className="about-section-info">
 					<h2 className="about-section-info-title">{title}</h2>
