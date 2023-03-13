@@ -9,7 +9,7 @@ function NavBar({ navRef }) {
 			<ul>
 				{navLinks.map((link) => (
 					<li key={link.name}>
-						<NavLink className="navbar-link font-link" to={`${link.path}`}>
+						<NavLink className="navbar-link" to={`${link.path}`}>
 							{link.name.toUpperCase()}
 						</NavLink>
 					</li>
