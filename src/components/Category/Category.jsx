@@ -1,16 +1,18 @@
 import React from "react";
 import "./Category.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import rightArrow from "../../assets/shared/desktop/icon-right-arrow.svg";
 
 function Category({ name }) {
-	const formattedName = name.toLowerCase().replace(" ", "-");
+	const { pathname } = useLocation();
+	let formattedName = name.toLowerCase().replace(" ", "-");
+
 	return (
 		<Link
 			type="button"
 			aria-label="select a project category"
 			className="category"
-			to={`/${formattedName}`}
+			to={`/${formattedName.replace("-small", "")}`}
 		>
 			<picture className="category-background">
 				<source
@@ -21,10 +23,17 @@ function Category({ name }) {
 					media="(max-width: 1280px)"
 					srcSet={`/assets/home/tablet/image-${formattedName}.jpg`}
 				/>
-				<source
-					media="(min-width: 1280px)"
-					srcSet={`/assets/home/desktop/image-${formattedName}.jpg`}
-				/>
+				{formattedName === "web-design" && pathname !== "/" ? (
+					<source
+						media="(min-width: 1280px)"
+						srcSet={`/assets/home/desktop/image-${formattedName}-small.jpg`}
+					/>
+				) : (
+					<source
+						media="(min-width: 1280px)"
+						srcSet={`/assets/home/desktop/image-${formattedName}.jpg`}
+					/>
+				)}
 				<img
 					src={`/assets/home/mobile/image-${formattedName}.jpg`}
 					alt=""
