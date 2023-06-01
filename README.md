@@ -5,6 +5,7 @@
 ### Built With
 
 - React
+- Sass
 
 <!-- GETTING STARTED -->
 
