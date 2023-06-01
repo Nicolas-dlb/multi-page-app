@@ -6,6 +6,7 @@
 
 - React
 - Sass
+- Firebase
 
 <!-- GETTING STARTED -->
 
