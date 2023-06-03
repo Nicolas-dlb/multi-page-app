@@ -4,7 +4,7 @@
 
 Multi page web app
 
-https://my-multi-page-app.web.app/
+https://my-multi-page-app.web.app
 
 ### Built With
 
