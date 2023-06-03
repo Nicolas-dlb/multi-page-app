@@ -11,6 +11,8 @@ https://my-multi-page-app.web.app
 - React
 - Sass
 - Firebase
+- React-router
+- React-hook-form
 
 <!-- GETTING STARTED -->
 
